@@ -880,6 +880,24 @@
             }
         },
 
+        "WARM_RESTART": {
+            "bgp": {
+                "bgp_timer": "500"
+            }
+        },
+
+        "PFC_WD": {
+            "Ethernet9": {
+               "action": "drop",
+               "detection_time": "100",
+               "restoration_time": "400"
+            }
+        },
+        "PFC_WD": {
+            "GLOBAL": {
+                "POLL_INTERVAL": "100"
+            }
+        },
         "SFLOW_COLLECTOR": {
             "collector1": {
                 "collector_ip": "10.100.12.13",
@@ -908,10 +926,9 @@
                 "agent_id": "Ethernet0"
             }
         },
-
         "AAA": {
             "authentication": {
-                "login": "local" 
+                "login": "local"
             }
         },
         "TACPLUS": {
@@ -925,7 +942,6 @@
                 "timeout": "10"
             }
         },
-
         "NAT_BINDINGS": {
             "bind1": {
                 "nat_pool": "pool1",
@@ -993,6 +1009,10 @@
                 "rrclient":"0"
             },
             "default|192.168.1.1": {
+                "local_asn": "65200",
+                "asn": "65100",
+                "name": "bgp peer 65100",
+                "ebgp_multihop_ttl": "3"
             }
         },
         "BGP_NEIGHBOR_AF": {
@@ -1027,7 +1047,7 @@
         },
         "PREFIX_SET": {
             "prefix1": {
-            } 
+            }
         },
         "PREFIX": {
             "prefix1|1|10.0.0.0/8|8..16": {
@@ -1077,5 +1097,5 @@
             "Error": "This Table is for testing, This Table does not have YANG models."
         }
     }
-    
+
 }
