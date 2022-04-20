@@ -85,6 +85,7 @@ setup(
                          './yang-models/sonic-bgp-neighbor.yang',
                          './yang-models/sonic-bgp-peergroup.yang',
                          './yang-models/sonic-bgp-peerrange.yang',
+                         './yang-models/sonic-bgp-allowed-prefix.yang',
                          './yang-models/sonic-breakout_cfg.yang',
                          './yang-models/sonic-buffer-pg.yang',
                          './yang-models/sonic-buffer-pool.yang',
@@ -126,11 +127,8 @@ setup(
                          './yang-models/sonic-versions.yang',
                          './yang-models/sonic-vlan.yang',
                          './yang-models/sonic-vrf.yang',
-
                          './yang-models/sonic-mclag.yang',
-
                          './yang-models/sonic-vlan-sub-interface.yang',
-
                          './yang-models/sonic-warm-restart.yang',
                          './yang-models/sonic-lldp.yang',
                          './yang-models/sonic-scheduler.yang',
@@ -145,7 +143,8 @@ setup(
                          './yang-models/sonic-tc-queue-map.yang',
                          './yang-models/sonic-pfc-priority-queue-map.yang',
                          './yang-models/sonic-pfc-priority-priority-group-map.yang',
-                         './yang-models/sonic-port-qos-map.yang']),
+                         './yang-models/sonic-port-qos-map.yang',
+                         './yang-models/sonic-macsec.yang']),
         ('cvlyang-models', ['./cvlyang-models/sonic-acl.yang',
                          './cvlyang-models/sonic-bgp-common.yang',
                          './cvlyang-models/sonic-bgp-global.yang',
@@ -153,6 +152,7 @@ setup(
                          './cvlyang-models/sonic-bgp-neighbor.yang',
                          './cvlyang-models/sonic-bgp-peergroup.yang',
                          './cvlyang-models/sonic-bgp-peerrange.yang',
+                         './cvlyang-models/sonic-bgp-allowed-prefix.yang',
                          './cvlyang-models/sonic-breakout_cfg.yang',
                          './cvlyang-models/sonic-copp.yang',
                          './cvlyang-models/sonic-crm.yang',
@@ -195,7 +195,8 @@ setup(
                          './cvlyang-models/sonic-tc-queue-map.yang',
                          './cvlyang-models/sonic-pfc-priority-queue-map.yang',
                          './cvlyang-models/sonic-pfc-priority-priority-group-map.yang',
-                         './cvlyang-models/sonic-port-qos-map.yang']),
+                         './cvlyang-models/sonic-port-qos-map.yang',
+                         './cvlyang-models/sonic-macsec.yang']),
     ],
     zip_safe=False,
 )
